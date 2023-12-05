@@ -1,0 +1,194 @@
+/* Define the @font-face rule to load and name your font */
+@font-face {
+  font-family: "League Spartan-Regular"; /* Replace 'YourFontName' with the actual font name */
+  src: url("fonts/LEAGUESPARTAN-VARIABLEFONT_WGHT.TTF") format("ttf");
+  /* Add additional sources or variations as needed */
+}
+html{
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Apply the font family to the body */
+body {
+  font-family: league; /* Use the font family defined above, fallback to sans-serif */
+  background-color: #d7dade;
+  
+  overflow-x: hidden;
+}
+
+.navbar {
+  font-family: "League Spartan", sans-serif;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #d7dade !important;
+}
+
+.navbar .nav-link {
+  margin-top: 22px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.mainslides {
+  width: 100vw;
+  display: flex;
+  transition: transform 0.5s ease; /* Added transition */
+}
+
+.slide {
+  flex: 0 0 100vw;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.slide .content {
+  width: 35%;
+  margin-top: 7rem;
+  left: 10%;
+}
+
+.slide h3 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 6rem;
+  width: 70%;
+  line-height: 6rem;
+}
+
+.slide p {
+  font-family: "League Spartan", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 90%;
+}
+.slide .option-row {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+.slide .first-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 13.9375rem;
+  background: #fff;
+  transition: background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 0.375rem;
+}
+.slide .first-btn:hover {
+  background: #474c57;
+}
+
+.slide .first-btn p {
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  transition: color 0.2 cubic-bezier(0.645, 0.045, 0.355, 1);
+  color: #474c57;
+  margin: 0.5rem 4rem;
+}
+
+.slide .first-btn:hover p {
+  color: #fff;
+}
+
+.slide img {
+  transition: background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 3rem;
+  height: 3.2rem;
+}
+
+.slide img:hover {
+  border-radius: 0.375rem;
+  background-color: #000;
+}
+
+.productslides {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 10%;
+  width: 20vw; /* Set a maximum width */
+  max-width: 20vw;
+  height: 75vh;
+  overflow: hidden;
+}
+
+#slide-container {
+  display: flex;
+  height: 75vh;
+
+  transition: transform 0.5s cubic-bezier(1, 0, 0, 0.99); /* Transition for smooth sliding */
+}
+
+#slide-container img {
+  flex: 0 0 auto;
+  width: 20vw;
+  height: auto;
+}
+
+.discounts .dis-count {
+  position: relative;
+}
+.discounts img {
+  height: 350px;
+  scale: 1.1;
+  width: 250px;
+  object-fit: contain;
+  position: absolute;
+  left: 8%;
+}
+
+.discounts .content {
+  top: 20%;
+  right: -5%;
+  position: absolute;
+}
+
+.discounts .content h4 {
+  display: inline-block;
+  color: #474c57;
+  font-family: "League Spartan";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+}
+.discounts .content .detial {
+  display: inline-block;
+}
+
+.discounts .content .first-btn p {
+  font-family: League Spartan;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.discounts .content .sec-btn p {
+  font-family: League Spartan;
+  text-align: center;
+  padding: 15px;
+  color: #474C57;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
